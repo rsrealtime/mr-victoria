@@ -32,10 +32,11 @@ This HoloLens application is an inquiry into the design space of pure mixed real
 4. Install following "Workloads":
   - .NET desktop development
   - Universal Windows Platform development
-    -- In Optional add: USB Device Connectivity
-    -- C++ Universal Windows Platform tools
-    -- Graphics debugger and GPU profiler for DirectX
-    -- Windows 10 SDK (10.0.17134.0)
+    - In Optional add: 
+    - USB Device Connectivity
+    - C++ Universal Windows Platform tools
+    - Graphics debugger and GPU profiler for DirectX
+    - Windows 10 SDK (10.0.17134.0)
   - Game development with Unity
 5. Reboot.
 
