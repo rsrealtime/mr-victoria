@@ -51,9 +51,12 @@ This HoloLens application is an inquiry into the design space of pure mixed real
   - Target Device > "HoloLens"
   - Architecture > "x86"
   - Visual Studio Version > "Visual Studio Version 2017"
-7. click "Build" and select a folder where to build. Recommended is "App" in the project root.
-8. When build is finished click the resulting Visual Studio 2017 project file, which will open VS2017.
-9. Select "Release" and "x86" and "Device" to deploy. 
+  <b>Important:</b> After switching the built Platform a restart of Unity is needed. Otherwise the TapToPlace won't work.
+7. Click "Build" and select a folder where to build. Recommended is "App" in the project root.
+8. When build is finished click the resulting Visual Studio 2017 project file in the App folder, which will open VS2017.
+9. Select "Release" and "x86" and "Device" to deploy.
+10. Connect the Hololens via USB and switch it on.
+11. Deploy.
 
 ### Known issues
 - You need approx. 35GB free HD space for the toolchain
