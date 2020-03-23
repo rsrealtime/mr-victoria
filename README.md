@@ -67,10 +67,10 @@ When deployed to the HoloLens, open the App by clicking the Icon. The applicatio
 The application is automatically recording a 6 DOF coordinate list in a speed of 20 samples per second. The logfile can be accessed via Hololens Device Portal in the application folder.
 
 ## Acknowledgment
-Prof. Dr. rer. nat. Claudia Müller-Birn (FU-Berlin)
-Kartin Glinka (museum 4.0)
-Dr. Silke Krohn (museum 4.0)
-Thomas Mann (framefield)
-Dominik Ganghofer (framefield)
+Prof. Dr. rer. nat. Claudia Müller-Birn (FU-Berlin)<br>
+Kartin Glinka (museum 4.0)<br>
+Dr. Silke Krohn (museum 4.0)<br>
+Thomas Mann (framefield)<br>
+Dominik Ganghofer (framefield)<br>
 
 
