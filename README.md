@@ -50,7 +50,7 @@ This HoloLens application is an inquiry into the design space of pure mixed real
   - Platform > "Universal Windows Platform"
   - Target Device > "HoloLens"
   - Architecture > "x86"
-  - Visual Studio Version > "Visual Studio Version 2017"
+  - Visual Studio Version > "Visual Studio Version 2017"<br>
   <b>Important:</b> After switching the built Platform a restart of Unity is needed. Otherwise the TapToPlace won't work.
 7. Click "Build" and select a folder where to build. Recommended is "App" in the project root.
 8. When build is finished click the resulting Visual Studio 2017 project file in the App folder, which will open VS2017.
