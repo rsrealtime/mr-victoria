@@ -1,13 +1,21 @@
 # pmr-victoria
-Unity HoloToolkit sesearch project augmenting Victoria statue at DHM
+Unity HoloToolkit research project augmenting Victoria statue at DHM
 
 ## Abstract
-This Unity HoloLens application was developed together with Museum 4.0, Deutsches Historisches Museum (DHM), and Framefield at FU Berlin for a research project. The application aims to explore different levels of initiative in pure mixed reality (PMR) museum guides. It implements three conditions of initiative we labled as guided (system initiative), un-guided (user initiative) and co-active (mixed-initiative). 
+This Unity HoloLens application was developed together with museum4punkt0, Deutsches Historisches Museum (DHM), and Framefield GmbH at FU-Berlin for a research project. The application aims to explore different levels of initiative in pure mixed reality (PMR) museum guides. It implements three conditions of initiative we labled as guided (system initiative), un-guided (user initiative) and co-active (mixed-initiative).
+<br><br>The project museum4punkt0 - Digital Strategies for the Museum of the Future, is funded by the Federal Government Commissioner for Culture and the Media in accordance with a resolution issued by the German Bundestag (Parliament of the Federal Republic of Germany). Further information: www.museum4punkt0.de/en/  
 
 ## Description
-This HoloLens application is an inquiry into the design space of pure mixed reality (PMR) in the context of museum interpretation. The application was developed to reflect constructs such as presence, object presence, agency, co-activity and initiative in PMR. Several interaction techniques are implemented to create the sense of being 'there' als well as the sense of various levels of initiative. To understand if users can sense those experiential variations, three conditions are implemented. While the content of museum interpretation stays the same, the form of (inter)activity with the guide varies. Our hypothesis is that various levels of initiative may have an impact on rememberance and experience. In addition we are interested in whether the real exhibit loses of gains realness or attenstion in such a PMR environment.  
+This HoloLens application is an inquiry into the design space of pure mixed reality (PMR) in the context of museum interpretation. The application was developed to reflect constructs such as presence, object presence, agency, co-activity and initiative in PMR. Several interaction techniques are implemented to create the sense of being 'there' als well as the sense of various levels of initiative. To understand if users can sense those experiential variations, three conditions are implemented. While the content of museum interpretation stays the same, the form of (inter)activity with the guide varies. Our hypothesis is that various levels of initiative may have an impact on rememberance and experience. In addition we are interested in whether the real exhibit loses of gains realness or attention in such a PMR environment.  
 
 ## Installation (Developer Toolchain)
+
+### System requirements
+- Microsoft HoloLens 1 Developer Edition (Consumer edition untested)
+- Windows 10 is required (Win 7 is not working, Win 8 might work)
+- Approx. 35GB free HD space for the toolchain is needed.
+- Visual Studio Community 2017 version 15.9 available at https://visualstudio.microsoft.com/de/vs/older-downloads/
+- Unity 2018.4.19f1 (LTS) available through Unity Hub at https://unity3d.com/de/get-unity/download
 
 ### Unity
 1. Download Unity Hub: https://unity3d.com/de/get-unity/download
@@ -43,7 +51,7 @@ This HoloLens application is an inquiry into the design space of pure mixed real
 ### Building the Application
 1. Clone this code to your local PC. Download won´t work as git-lfs is used to store the larger asset files.
 2. Open Unity Hub and click "Project" and "ADD" the folder (which is a Unity project folder) you just downloaded. This creates a Project which you can assign a specific Unity version.
-3. Choose the Unity Version 2018.4.19f1 then click the project name to open the Unity project in the selected version.
+3. Choose the Unity Version 2018.4.19f1 then click the project name to open the Unity project in the selected version. Unity will update project to selected version.
 4. The Main Unity Project file is located in /Assets/ff/main.unity
 5. In Unity click "Folder" > "Build Settings ...".
 6. Make the following selections in "Build Settings":
@@ -59,22 +67,25 @@ This HoloLens application is an inquiry into the design space of pure mixed real
 11. Deploy.
 
 ### Known issues
-- You need approx. 35GB free HD space for the toolchain
-- Windows 10 is required (Win 7 is not working, Win 8 might work).
-- You should use Visual Studio 2017
 - If you have trouble connecting to the HoloLens via USB, try to ...
   - do a factory reset on the HoloLens
   - install `Windows IP Over USB-x86_en-us.exe`
 
-## Use
-When deployed to the HoloLens, open the App by clicking the Icon. The application uses voice commands, so you have to accept the microphone use requesten in the pop-up dialogue. The application starts in configuration mode. Air-Tap the Victoria mesh and map it to the reals statue in the DHM. You can use the configuration menu on the right to translate, scale and rotate the statue. To start one of the conditions you say "Start alpha!" for the guided condition, "Start bravo!" for the un-guided condition and "Start charly!" for the mixed initiative version. The experience will start as soon as your gaze is on the statue. To abort the tour say "Cancel Tour!". To go back to the configuration environment say "Admin Mode!". All three tours can also be started by Air-Tap on one of the letters A, B or C.
+## Use (Hololens)
+When deployed to the HoloLens, open the App by clicking the Icon. The application uses voice commands, so you have to accept the microphone use requested in the pop-up dialogue. The application starts in configuration mode. Air-Tap the Victoria mesh and map it to the real statue in the DHM. You can use the configuration menu on the right to translate, scale and rotate the statue. To start one of the conditions you say "Start alpha!" for the guided condition, "Start bravo!" for the un-guided condition and "Start charly!" for the mixed initiative version. The experience will start as soon as your gaze is on the statue. To abort the tour say "Cancel Tour!". To go back to the configuration environment say "Admin Mode!". All three tours can also be started by Air-Tap on one of the letters A, B or C.
 The application is automatically recording a 6 DOF coordinate list in a speed of 20 samples per second. The logfile can be accessed via Hololens Device Portal in the application folder.
+
+## Use (Unity)
+When testing the application in Unity, voice commands can be startet via number keys. The '1' key will start the guided mode, '2' Un-guided, and '3' mixed initiative mode. To avoid waiting times during content play the 'q' key can be pressed to allow premature content selection. However, guide formats can also be selected via 'configuration menu' buttons 'A', 'B', 'C' similar to the use when deployed on HoloLens.
 
 ## Acknowledgment
 Prof. Dr. rer. nat. Claudia Müller-Birn (FU-Berlin)<br>
-Kartin Glinka (museum 4.0)<br>
-Dr. Silke Krohn (museum 4.0)<br>
-Thomas Mann (framefield)<br>
-Dominik Ganghofer (framefield)<br>
+Dr. Patrick Tobias Fischer (FU-Berlin)<br>
+Katrin Glinka (museum4punkt0)<br>
+Dr. Silke Krohn (museum4punkt0)<br>
+Thomas Mann (Framefield GmbH)<br>
+Dominik Ganghofer (Framefield GmbH)<br>
 
-
+## License
+This application is licensed under MIT License (/LICENSE))<br>
+HoloToolkit is licensed under the MIT License (/Assets/vendor/HoloToolkit/License.txt)
